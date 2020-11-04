@@ -1,14 +1,15 @@
 <?php
 namespace App\Models;
-
+use App\Models\Simple\XMLModel;
 /*
  * Mock travel destination data.
  * Note that we don't have to extend CodeIgniter's model for now
  */
 
-class Places {
+class Places extends XMLModel{
 
     //mock data : an array of records
+   /*
     protected $data = [
         '1' => [
             'id' => 1,
@@ -46,7 +47,7 @@ class Places {
             'image' => 'vietnam.jpg',
         ],
     ];
-
+ /*
     public function findAll() {
         return $this->data;
     }
@@ -57,5 +58,10 @@ class Places {
         }
         return null;
     }
+     * *
+     */
+    protected $origin = WRITEPATH . 'data/pleasedata.xml';
+    protected $keyField = 'id';
+    protected $validationRules = [];
 
 }

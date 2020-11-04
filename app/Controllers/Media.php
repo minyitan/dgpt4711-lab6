@@ -16,6 +16,6 @@ namespace App\Controllers;
 class Media extends BaseCollector{
     //put your code here
     public function image($filename){
-        readfile(WRITEPATH . 'data/' . $filename);
+        readfile(WRITABLE . 'data/' . $filename);
     }
 }

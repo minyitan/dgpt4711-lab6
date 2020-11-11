@@ -46,7 +46,7 @@ class Travel  extends BaseController{
         $fields = [
             'title' => 'Travel Destinations',
              'heading' => 'Travel Destinations',
-             'footer' => 'Copyright Xavier'
+             'footer' => 'Copyright tanminyi'
          ];
         
         return $parser->setData($fields)
@@ -70,7 +70,7 @@ class Travel  extends BaseController{
         $fields = [
             'title' => 'Travel Destinations',
              'heading' => 'Travel Destinations',
-             'footer' => 'Copyright Xavier'
+             'footer' => 'Copyright Tanminyi'
          ];
        return $parser->setData($fields)
                       ->render('templates\top') .
